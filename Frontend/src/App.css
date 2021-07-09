@@ -1,6 +1,8 @@
 .App{
+  position: relative;
+  min-height: 100vh;
   overflow: hidden;
-  height: auto;
+  padding-bottom: 6em;
 }
 
 .heading{
@@ -246,7 +248,6 @@ h1 {
   font-size: 1.1em;
   border-radius: 8px;
   color: rgb(238, 28, 28);
-
 }
 
 .sideBox {
@@ -280,6 +281,70 @@ h1 {
   outline: none;
 }
 
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  /* border: 1px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  background-color: rgb(0, 0, 0);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 8px;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  opacity: 0.9;
+}
 
+.logo {
+  /* background: url("./Images/Logo/logo2.jpg") no-repeat center/cover; */
+  height: 55px;
+  width: 115px;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 2em;
+}
 
+.footerText {
+  margin-top: 15px;
+  color: white;
+  font-size: 1em;
+}
 
+.footerText ul {
+  margin-top: 8px;
+  list-style: none;
+  padding-left: 2.5em;
+  opacity: 0.7;
+}
+
+.footerText ul li:hover {
+    transform: translate(0.5px, 0.4px);
+}
+
+.footerText ul a {
+  text-decoration: none;
+  color: rgb(168, 164, 164);
+}
+
+.footerText ul a:hover{
+    color: white;
+}
+ 
+.footerText ul a img {
+  width: 20px;
+  height: 20px;
+}
+
+.copyright {
+  color: grey;
+  opacity: 0.9;
+  text-align: center;
+  padding: 1px;
+  font-size: 1em;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
